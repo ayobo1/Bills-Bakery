@@ -1,0 +1,9 @@
+h3{
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 0px;
+};
+#map{
+    float: right;
+}
