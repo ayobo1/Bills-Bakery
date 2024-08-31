@@ -8,30 +8,125 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <h1 style = "color:darkgreen; font-size: 30px;">
-        <img src="title billsbaker.jpg" height = "90"; a href"google.com"> 
-        <big>Bill's Bakery</big> 
-    </h1>
-</header>
-    <hr> 
-    <h2>
-        <big>Menu</big>
-        <li>Italian Loaf</li>
-    </h2>
+    <header>                                                                <!--header-->
+        <h1>
+            <img src="title billsbaker.jpg" alt="Bill's Bakery Logo" height="40">
+            <span class="left-text">Bill's Bakery</span>
+            <span class="right-text">Italian Style Bread, Made Fresh Daily</span>
+        </h1>
+        <h2>
 
-    <h3>
-    <big>Menu</big>
-    <li>Italian Loaf</li></h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11842.03179641779!2d-80.1145656!3d42.096591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88327fc5d9b63dd5%3A0xc1d9ce3be69d0680!2sBill&#39;s%20Bakery!5e0!3m2!1sen!2sus!4v1716059522401!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-    </h3>
+            <img src="Fresh Daily.png" alt="Bill" class="fading-image">
+        </h2>
+    </header>
+    
+    <nav>
+        <ul>                                                       <!--code for the upper bar[might have gotten lazy :) ]-->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#centeralblock">Menu</a></li>
+            <li><a href="#centeralblock">Location</a></li>
+            <li><a href="#reviews">Customer Reviews</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </nav> 
+    
+    <main>
+        <section id="home">                                         <!--words of welcome-->
+            <h2>Welcome to Bill's Bakery</h2>
+            <p id="centeralblock">Your favorite place for fresh, delicious baked goods.</p>
+        </section>
 
-<footer style = "background-color: darkgreen; color: rgb(0, 0, 0);">
-    <hr>
-    author: ayoobwebdev<br>
-    &copy; copyright reserved<br>
-    <small> <a href = "ayoob.y.ala@gmail.com" target=_self title="Creator Email">ayoob.y.ala@gmail.com</a> </small>
-</footer>
+        <div class="content">
+            <section id="menu">                                                    <!--code for the menu-->
+                <h2>Menu</h2>
+                <h3 style="font-size: smaller;">Please click for more information</h3>
+                <div class="menu-item" data-info="A delicious Italian loaf made from the finest ingredients."  data-image="Italian.jpg">
+                    <img src="Italian.jpg">
+                    <p>Italian Loaf</p>
+                    <p style="color: darkgreen; font-size: smaller;">$3.00</p>
+                </div>
+                <div class="menu-item" data-info="A crispy French baguette with a golden crust."  data-image="Vienna.jpg">
+                    <img src="Vienna.jpg">
+                    <p>Vienna Loaf</p>
+                    <p style="color: darkgreen; font-size: smaller;">$3.00</p>
+                </div>
+                <div class="menu-item" data-info="Flaky and buttery croissants, perfect for breakfast."  data-image="Homestyle.jpg">
+                    <img src="Homestyle.jpg">
+                    <p>Home Style Loaf</p>
+                    <p style="color: darkgreen; font-size: smaller;">$3.35</p>
+                </div>
+                <div class="menu-item" data-info="Sweet and tasty cupcakes in various flavors."  data-image="RLES.jpg">
+                    <img src="RLES.jpg">
+                    <p>Round Large European Style</p>
+                    <p style="color: darkgreen; font-size: smaller;">$12.99</p>
+                </div>
+                <div class="menu-item" data-info="A variety of pastries, freshly baked daily."  data-image="PepBread.jpg">
+                    <img src="PepBread.jpg">
+                    <p>Peperoni Bread</p>
+                    <p style="color: darkgreen; font-size: smaller;">$12.99</p>
+                </div>
+                <div class="menu-item" data-info="Custom cakes made to order for any occasion."  data-image="PepRolls.jpg">
+                    <img src="PepRolls.jpg">
+                    <p>Peperoni Rolls</p>
+                    <p style="color: darkgreen; font-size: smaller;">$12.99</p>
+                </div>
+                <div class="menu-item" data-info="                                                  "  data-image="Pizza.jpg">
+                    <img src="Pizza.jpg">
+                    <p>Pizza Shells 14" pack</p>
+                    <p style="color: darkgreen; font-size: smaller;">$12.99</p>
+                </div>
+                <div class="menu-item" data-info="                                              "  data-image="Lepina.jpg">
+                    <img src="Lepina.jpg">
+                    <p>Lepina</p>
+                    <p style="color: darkgreen; font-size: smaller;">$12.99</p>
+                </div>
+                <div class="menu-item" data-info="                                              "  data-image="Seasonal.jpg">
+                    <img src="Seasonal.jpg">
+                    <p>Seasonal Options</p>
+                    <p style="color: darkgreen; font-size: smaller;">$12.99 - $13.99</p>
+                </div> 
+            </section>
+            
+            <div id="popup" class="popup">                                 <!--code for the menu popup-->
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <img id="popup-image" src="" alt="Popup Image" />
+                    <h3 id="popup-title"></h3>
+                    <p id="popup-info"></p>
+                </div>
+            </div>
+                <script src="script.js"></script>
+            <section id="location">                                                 <!--code for the google maps-->
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11842.03179641779!2d-80.1145656!3d42.096591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88327fc5d9b63dd5%3A0xc1d9ce3be69d0680!2sBill&#39;s%20Bakery!5e0!3m2!1sen!2sus!4v1716059522401!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+            </section>
+        </div>
+        <section id="times">                                                       <!--code for the google reviews-->
+            <h2>Operating Hours</h2>
+            <h2>Open Tuesday to Sunday: 6:00 AM - 1:00 PM</h2>
+            <h3>Closed Monday</h3>
+        </section>
+        </div>
+        <section id="reviews">                                                       <!--code for the google reviews-->
+            <h2>Customer Reviews</h2>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-7a711727-d3ca-4274-8ef2-7f87d62a5260" data-elfsight-app-lazy></div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Author: ayoobwebdev<br>                                                  <!--code for the author and code for the message box-->
+        &copy; Copyright reserved</p>
+        <small><a href="mailto:ayoob.y.ala@gmail.com" title="Creator Email">ayoob.y.ala@gmail.com</a></small>
+        <div class="contact-form" id="contact-form">
+            <h3>Contact Us</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+        </div>
+    </footer>
 
 </body>
 </html>
